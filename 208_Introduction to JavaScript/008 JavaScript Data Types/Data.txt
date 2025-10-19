@@ -1,0 +1,13 @@
+f12
+var myColors = 'red'; 
+myColors
+
+var doorNum = 7; 
+doorNum
+
+4 > 3
+3 > 4
+
+var myCars = ["Ford","Toyota"]
+myCars[0];
+

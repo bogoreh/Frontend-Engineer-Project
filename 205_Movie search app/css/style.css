@@ -1,0 +1,12 @@
+body {
+    background-color: teal;
+    text-align: center;
+}
+
+input,
+button {
+    border-radius: 5px;
+    font-size: 30px;
+    padding: 5px 10px;
+    ;
+}

@@ -1,0 +1,15 @@
+f12
+
+var myNum = 7; 
+if(myNum == 7){
+   console.log("Lucky 7!"); 
+}
+Lucky 7!
+
+var myNum = 10; 
+if(myNum == 7){
+    ("Lucky 7!"); 
+  } else {
+      console.log("You're not very lucky today...");
+   }
+

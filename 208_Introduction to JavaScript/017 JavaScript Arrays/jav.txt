@@ -1,0 +1,5 @@
+f12
+var myData = [7, "John",17,"Jane"];
+myData
+myData[3]; 
+

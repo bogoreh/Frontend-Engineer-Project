@@ -1,0 +1,14 @@
+f12
+
+var x = ["John",7]; 
+x
+
+var y = ["Abdi","Bogoreh"];
+y 
+
+var a = 7 + 7;
+var b = "7" + 7; 
+a
+b
+
+

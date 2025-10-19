@@ -1,0 +1,188 @@
+@import url(https://fonts.googleapis.com/css?family=VT323|Pacifico|Nova+Mono);
+
+body {
+    font-family: "Nova Mono", monospace;
+    background-image: #ea8115;
+    background-image: -webkit-linear-gradient(bottom,
+            #fcaf3e 0%,
+            #f57900 31%,
+            #ce5c00 100%);
+    background-image: -moz-linear-gradient(bottom,
+            #fcaf3e 0%,
+            #f57900 31%,
+            #ce5c00 100%);
+    background-image: -o-linear-gradient(bottom,
+            #fcaf3e 0%,
+            #f57900 31%,
+            #ce5c00 100%);
+    background-image: -ms-linear-gradient(bottom,
+            #fcaf3e 0%,
+            #f57900 31%,
+            #ce5c00 100%);
+    background-image: linear-gradient(bottom,
+            #fcaf3e 0%,
+            #f57900 31%,
+            #ce5c00 100%);
+}
+
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+.btn {
+    width: 50px;
+    position: relative;
+    margin: 10px 5px;
+    text-align: center;
+    padding: 6px 0;
+    box-shadow: 2px 2px 2px black;
+    font-size: 1.7em;
+}
+
+.btn:active {
+    top: 1px;
+}
+
+.double {
+    width: 117px;
+}
+
+.result {
+    position: relative;
+    height: 60px;
+    width: 250px;
+    margin: auto;
+    margin-bottom: 30px;
+    border: 2px solid #888;
+    border-radius: 7px;
+    background-image: #b57e25;
+    background-image: -webkit-radial-gradient(50% 50%,
+            circle farthest-corner,
+            #d0a35c 0%,
+            #c17d11 66%,
+            #8f5902 99%);
+    background-image: -moz-radial-gradient(50% 50%,
+            circle farthest-corner,
+            #d0a35c 0%,
+            #c17d11 66%,
+            #8f5902 99%);
+    background-image: -o-radial-gradient(50% 50%,
+            circle farthest-corner,
+            #d0a35c 0%,
+            #c17d11 66%,
+            #8f5902 99%);
+    background-image: -ms-radial-gradient(50% 50%,
+            circle farthest-corner,
+            #d0a35c 0%,
+            #c17d11 66%,
+            #8f5902 99%);
+    background-image: radial-gradient(50% 50%,
+            circle farthest-corner,
+            #d0a35c 0%,
+            #c17d11 66%,
+            #8f5902 99%);
+    box-shadow: 3px 3px 4px #444 inset;
+}
+
+.result h2 {
+    width: 230px;
+    position: relative;
+    text-align: right;
+    margin: 4px 8px auto auto;
+    font-size: 3em;
+    opacity: 0.6;
+    color: white;
+}
+
+.contour {
+    position: relative;
+    border: 1px;
+    border-radius: 13px;
+    padding: 20px;
+    padding-top: 40px;
+    width: 320px;
+    margin: 60px auto;
+    background-image: #a1a39e;
+    background-image: -webkit-linear-gradient(left,
+            #9a9f96 0%,
+            #1f1f1f 4%,
+            #eeeeec 6%,
+            #d3d7cf 9%,
+            #474740 95%,
+            #eeeeec 97%,
+            #babdb6 99%);
+    background-image: -moz-linear-gradient(left,
+            #9a9f96 0%,
+            #1f1f1f 4%,
+            #eeeeec 6%,
+            #d3d7cf 9%,
+            #474740 95%,
+            #eeeeec 97%,
+            #babdb6 99%);
+    background-image: -o-linear-gradient(left,
+            #9a9f96 0%,
+            #1f1f1f 4%,
+            #eeeeec 6%,
+            #d3d7cf 9%,
+            #474740 95%,
+            #eeeeec 97%,
+            #babdb6 99%);
+    background-image: -ms-linear-gradient(left,
+            #9a9f96 0%,
+            #1f1f1f 4%,
+            #eeeeec 6%,
+            #d3d7cf 9%,
+            #474740 95%,
+            #eeeeec 97%,
+            #babdb6 99%);
+    background-image: linear-gradient(left,
+            #9a9f96 0%,
+            #1f1f1f 4%,
+            #eeeeec 6%,
+            #d3d7cf 9%,
+            #474740 95%,
+            #eeeeec 97%,
+            #babdb6 99%);
+    box-shadow: 5px 5px 2px #333;
+}
+
+h1.head {
+    font-family: "Pacifico", sans;
+    margin-top: 40px;
+    font-size: 3.4em;
+    color: #ffffff;
+}
+
+.btns {
+    margin: 15px auto;
+}
+
+/* Scaling for Mobile */
+
+@media screen and (max-width: 768px) {
+    .contour {
+        top: 30px;
+        -moz-transform: scale(0.7);
+        -ms-transform: scale(0.7);
+        -o-transform: scale(0.7);
+        -webkit-transform: scale(0.7);
+        transform: scale(0.7);
+        -webkit-transform-origin: 0 0;
+        -ms-transform-origin: 0 0;
+        -o-transform-origin: 0 0;
+        -moz-transform-origin: 0 0;
+        transform-origin: 0 0;
+        left: 50%;
+        margin-left: -112px;
+    }
+}

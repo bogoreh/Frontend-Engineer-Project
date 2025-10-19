@@ -1,0 +1,7 @@
+f12
+typeof "John"
+typeof 7
+typeof false
+typeof myCar
+typeof null 
+typeof [1,2,3,4]

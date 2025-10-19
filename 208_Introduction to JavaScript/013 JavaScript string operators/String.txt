@@ -1,0 +1,4 @@
+var one = 'Show me';
+var two = 'The money';
+var three = one + " " + two;
+

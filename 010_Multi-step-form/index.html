@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="assets/images/favicon-32x32.png">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <head>
+        <title>Multi Step Form - Frontend Mentor</title>
+    </head>
+    <body>
+        <!--If you want to hide something, use "hide" inside class attribute of an html element-->
+        <div class="outer-container">
+            <div class="col-1">
+                <div class="pg-num" id="pg-num1">
+                    <span class="num-1 active-num-col" id="num-1">1</span>
+                    <div class="num-desc">
+                        <div class="num-step">STEP 1</div>
+                        <div class="num-name">YOUR INFO</div>
+                    </div>
+                </div>
+                <div class="pg-num" id="pg-num2">
+                    <span class="num-2" id="num-2">2</span>
+                    <div class="num-desc">
+                        <div class="num-step">STEP 2</div>
+                        <div class="num-name">SELECT PLAN</div>
+                    </div>
+                </div>
+                <div class="pg-num" id="pg-num3">
+                    <span class="num-3" id="num-3">3</span>
+                    <div class="num-desc">
+                        <div class="num-step">STEP 3</div>
+                        <div class="num-name">ADD-ONS</div>
+                    </div>
+                </div>
+                <div class="pg-num" id="pg-num4">
+                    <span class="num-4" id="num-4">4</span>
+                    <div class="num-desc">
+                        <div class="num-step">STEP 4</div>
+                        <div class="num-name">SUMMARY</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="form-container" id="form-container">
+                    <div class="upper-row">
+                        <h1 class="form-title">Personal info</h1>
+                        <p class="form-desc">Please provide your name, email address, and phone number.</p>
+                        <form action="#">
+                            <div class="frm-label-container">
+                                <label for="frm-name" class="frm-label">Name</label>
+                                <p class="frm-err-msgs hide" id="err-name">This field is required</p>
+                            </div>
+                            <br>
+                            <input type="text" class="frm-input" id="frm-name" name="name" placeholder="e.g. Stephen King" required>
+                            <br>
+                            <div class="frm-label-container">
+                                <label for="frm-mail" class="frm-label">Email Address</label>
+                                <p class="frm-err-msgs hide" id="err-email">This field is required</p>
+                            </div>
+                            <br>
+                            <input type="email" class="frm-input" id="frm-mail" name="email" placeholder="e.g. stephenking@torem.com" required>
+                            <br>
+                            <div class="frm-label-container">
+                                <label for="frm-phone" class="frm-label">Phone Number</label>
+                                <p class="frm-err-msgs hide" id="err-phone">This field is required</p>
+                            </div>
+                            <br>
+                            <input type="tel" class="frm-input" id="frm-phone" name="phone" placeholder="e.g. +1 234 567 890" required>
+                        </form>
+                    </div>
+                    <div class="bottom-row">
+                        <button class="b-r-right-btn" id="frm-next-btn">Next Step</button>
+                    </div>
+                </div>
+                <div class="plan-container hide" id="plan-container">
+                    <div class="upper-row">
+                        <h1 class="form-title">Select your plan</h1>
+                        <p class="form-desc">You have the option of monthly or yearly billing.</p>
+                        <div class="plans-outer-container">
+                            <div class="plan" id="plan-1">
+                                <img src="assets/images/icon-arcade.svg" alt="arcade plan icon">
+                                <div class="plan-details">
+                                    <h3 class="plan-title">Arcade</h3>
+                                    <div class="plan-price">
+                                        <p>$</p>
+                                        <p class="plan-p" id="plan1-p">9</p>
+                                        <p class="plan-d">/mo</p>
+                                    </div>
+                                    <p class="free-mon-txt hide" id="plan1-free-txt">2 months free</p>
+                                </div>
+                            </div>
+                            <div class="plan" id="plan-2">
+                                <img src="assets/images/icon-advanced.svg" alt="advanced plan icon">
+                                <div class="plan-details">
+                                    <h3 class="plan-title">Advanced</h3>
+                                    <div class="plan-price">
+                                        <p>$</p>
+                                        <p class="plan-p" id="plan2-p">12</p>
+                                        <p class="plan-d">/mo</p>
+                                    </div>
+                                    <p class="free-mon-txt hide" id="plan2-free-txt">2 months free</p>
+                                </div>
+                            </div>
+                            <div class="plan" id="plan-3">
+                                <img src="assets/images/icon-pro.svg" alt="pro plan icon">
+                                <div class="plan-details">
+                                    <h3 class="plan-title">Pro</h3>
+                                    <div class="plan-price">
+                                        <p>$</p>
+                                        <p class="plan-p" id="plan3-p">15</p>
+                                        <p class="plan-d">/mo</p>
+                                    </div>
+                                    <p class="free-mon-txt hide" id="plan3-free-txt">2 months free</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mon-annual-selection">
+                            <p class="monthly mon-active" id="monthly">Monthly</p>
+                            <div class="select-btn-outer-container" id="duration-btn">
+                                <div class="select-btn"></div>
+                            </div>
+                            <p class="yearly" id="yearly">Yearly</p>
+                        </div>
+                    </div>
+                    <div class="multi-bottom-row">
+                        <button class="b-r-left-btn" id="plan-back-btn">Go Back</button>
+                        <button class="b-r-right-btn" id="plan-next-btn">Next Step</button>
+                    </div>
+                </div>
+                <div class="adds-container hide" id="adds-container">
+                    <div class="upper-row">
+                        <h1 class="form-title">Pick add-ons</h1>
+                        <p class="form-desc">Add-ons help enhance your gaming experience.</p>
+                        <div class="addons-outer-container">
+                            <div class="addons" id="addon-1">
+                                <div class="addons-details">
+                                    <div class="addons-txts">
+                                        <input type="checkbox" id="addon1-checkbox" name="addon1-checkbox" value="Online Service">
+                                        <div class="addons-txt-desc">
+                                            <h3 class="addons-title" id="addon1-title">Online service</h3>
+                                            <p class="addons-desc">Access to multiplayer games</p>
+                                        </div>
+                                    </div>
+                                    <div class="addons-price">
+                                        <p>+$</p>
+                                        <p id="addon1-price">1</p>
+                                        <p class="plan-d">/mo</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="addons" id="addon-2">
+                                <div class="addons-details">
+                                    <div class="addons-txts">
+                                        <input type="checkbox" id="addon2-checkbox" name="addon2-checkbox" value="Larger storage">
+                                        <div class="addons-txt-desc">
+                                            <h3 class="addons-title" id="addon2-title">Larger storage</h3>
+                                            <p class="addons-desc">Extra 1TB of cloud save</p>
+                                        </div>
+                                    </div>
+                                    <div class="addons-price">
+                                        <p>+$</p>
+                                        <p id="addon2-price">2</p>
+                                        <p class="plan-d">/mo</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="addons" id="addon-3">
+                                <div class="addons-details">
+                                    <div class="addons-txts">
+                                        <input type="checkbox" id="addon3-checkbox" name="addon3-checkbox" value="Online Service">
+                                        <div class="addons-txt-desc">
+                                            <h3 class="addons-title" id="addon3-title">Customizable profile</h3>
+                                            <p class="addons-desc">Custom theme on your profile</p>
+                                        </div>
+                                    </div>
+                                    <div class="addons-price">
+                                        <p>+$</p>
+                                        <p id="addon3-price">2</p>
+                                        <p class="plan-d">/mo</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="multi-bottom-row">
+                        <button class="b-r-left-btn" id="addons-back-btn">Go Back</button>
+                        <button class="b-r-right-btn" id="addons-next-btn">Next Step</button>
+                    </div>
+                </div>
+                <div class="summary-container hide" id="summary-container">
+                    <div class="upper-row">
+                        <h1 class="form-title">Finishing up</h1>
+                        <p class="form-desc">Double-check everything looks OK before confirming.</p>
+                        <div class="summary-outer-container">
+                            <div class="summary-inner-container">
+                                <div class="summary-top-txt">
+                                    <div class="s-top-left">
+                                        <div class="s-top-plan-time">
+                                            <p class="s-top-plan" id="s-top-plan">Arcade</p>
+                                            <p> (</p>
+                                            <p class="s-top-plantime" id="s-top-plantime">Monthly</p>
+                                            <p>)</p>
+                                        </div>
+                                        <p class="s-top-plan-change" id="s-top-plan-change">Change</p>
+                                    </div>
+                                    <div class="s-top-right">
+                                        <p>$</p>
+                                        <p class="s-top-price" id="s-top-price">9</p>
+                                        <p class="s-top-time plan-d" id="s-top-time">/mo</p>
+                                    </div>
+                                </div>
+                                <hr class="summary-hr">
+                                <div class="summary-mid-txt">
+                                    <div class="summary-addon hide" id="summary-addon-1">
+                                        <p class="sum-addon-name" id="sum-addon1-name">Online service</p>
+                                        <div class="sum-addon-price-section">
+                                            <p>+$</p>
+                                            <p class="sum-addon-price" id="sum-addon1-price">1</p>
+                                            <p class="sum-addon-time plan-d"  id="sum-addon1-time">/mo</p>
+                                        </div>
+                                    </div>
+                                    <div class="summary-addon hide" id="summary-addon-2">
+                                        <p class="sum-addon-name" id="sum-addon2-name">Larger storage</p>
+                                        <div class="sum-addon-price-section">
+                                            <p>+$</p>
+                                            <p class="sum-addon-price" id="sum-addon2-price">2</p>
+                                            <p class="sum-addon-time plan-d"  id="sum-addon2-time">/mo</p>
+                                        </div>
+                                    </div>
+                                    <div class="summary-addon hide" id="summary-addon-3">
+                                        <p class="sum-addon-name" id="sum-addon3-name">Customizable profile</p>
+                                        <div class="sum-addon-price-section">
+                                            <p>+$</p>
+                                            <p class="sum-addon-price" id="sum-addon3-price">2</p>
+                                            <p class="sum-addon-time plan-d"  id="sum-addon3-time">/mo</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="summary-bottom-txt">
+                                <div class="sum-bottom-left">
+                                    <p>Total (</p>
+                                    <p class="sum-bottom-time" id="sum-bottom-time">per month)</p>
+                                </div>
+                                <div class="sum-bottom-right">
+                                    <p>+$</p>
+                                    <p class="sum-total-price" id="sum-total-price">12</p>
+                                    <p class="sum-total-time plan-d" id="sum-total-time">/mo</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="multi-bottom-row">
+                        <button class="b-r-left-btn" id="summary-back-btn">Go Back</button>
+                        <button class="b-r-right-btn confirm-btn" id="summary-confirm-btn">Confirm</button>
+                    </div>
+                </div>
+                <div class="thnx-container hide" id="thnx-container">
+                    <div class="upper-row">
+                        <img src="assets/images/icon-thank-you.svg" alt="Thank you page icon" class="thanks-icon">
+                        <h2 class="thanks-title">Thank you!</h2>
+                        <p class="thanks-desc">Thanks for confirming your subscription! We hope you have fun using our platform. If yu ever need support, please feel free to email us at <a href="mailto:support@loremgaming.com">support@loremgaming.com</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="js/script.js"></script>
+    </body>
+</html>
