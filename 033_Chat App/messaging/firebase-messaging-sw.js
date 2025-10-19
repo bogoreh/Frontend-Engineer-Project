@@ -6,7 +6,7 @@ importScripts('https://www.gstatic.com/firebasejs/7.6.1/firebase-messaging.js');
 
 // Your web app's Firebase configuration
 var firebaseConfig = {
-    apiKey: "AIzaSyBxhkOKc_tWaeeUSePIwitc2Tm-aqrLTww",
+    apiKey: "",
     authDomain: "chat-app-7da13.firebaseapp.com",
     databaseURL: "https://chat-app-7da13.firebaseio.com",
     projectId: "chat-app-7da13",
