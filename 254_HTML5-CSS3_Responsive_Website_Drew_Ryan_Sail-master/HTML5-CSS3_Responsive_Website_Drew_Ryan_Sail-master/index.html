@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+			<meta charset="utf-8">
+			<meta http-equiv="X-UA-Compatible" content="IE=edge">
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<meta name="description" content="Web tutorial">
+			<meta name="author" content="chimabu@gmail.com">
+		<!--<meta name="refresh" content="30">-->
+			<meta name="keyword" content="html/css5">
+			<title>Rocket Desit - Mobile/desktop Web design</title>
+			<link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css"/>
+			<link rel="stylesheet" type="text/css" href="style.css"/>
+			<link rel="shortcut icon" type="image/png" href="img/icons/favicon.png"/>
+			<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"/>
+			<link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+			<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+		  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+</head>
+<body>
+	<div id="wrapper">
+			<div id="banner-wrapper">
+						<header>
+								<div id="header-inner">
+											<a href="index.html" id="logo" title="Rock-design"></a>
+											<nav>
+													<a href="#" id="menu-icon"></a>
+													<ul>
+																<li><a href="index.html" class="current">Home</a></li>
+																<li><a href="#">Skills</a></li>
+																<li><a href="#">Portfolio</a></li>
+																<li><a href="#">OurTeam</a></li>
+																<li><a href="#">Contact</a></li>
+														</ul>
+											</nav>
+								</div>
+						</header>
+
+<!--- Slider Start -->
+				<script src="js/jquery.bxslider.min.js"></script><!--For Image Slider-->
+						<div class="slider-wrap">
+									<section class="slider">
+											<ul class="slider1">
+														<li><img src="img/pics/desktop-1.png"></li>
+														<li><img src="img/pics/desktop-2.png"></li>
+									<!--<li><img src="img/pics/desktop-3.png"></li>-->
+											</ul>
+									</section>
+						</div>
+<!--- ADD IMAGE SLIDER HTML HERE -->
+									<script type="text/javascript">
+												$('.slider1').bxSlider({
+													mode: 'fade',
+													captions: false,
+													auto:true,
+													pager:false,
+
+												});
+												$('.slider2').bxSlider({
+													pager:false,
+													captions: true,
+													maxSlides: 3,
+													minSlides: 1,
+													slideWidth: 230,
+													slideMargin: 10
+												});
+												$('.slider3').bxSlider({
+													mode: 'fade',
+													captions: false,
+													auto:true,
+													pager:false,
+													controls:false,
+												});
+									</script>
+<!--- Slider End -->
+			</div> <!-- End Banner wrapper-->
+
+<!-- start of the 3 col Icons-->
+			<section class="one-third">
+					<div class="icon-wrap">
+							<td><i class="fa fa-desktop"></i></td>
+					</div>
+					<h3>Web Design</h3>
+			</section>
+
+			<section class="one-third">
+					<div class="icon-wrap">
+							<td><i class="fa fa-pencil-square-o"></i></td>
+					</div>
+					<h3>Digital Graphics</h3>
+			</section>
+
+			<section class="one-third">
+					<div class="icon-wrap">
+							<td><i class="fa fa-file-code-o"></i></td>
+					</div>
+					<h3>Development</h3>
+			</section>
+<!-- End of the 3 col Icons-->
+			<div class="clearfix-padding"></div>
+
+			<section class="left-col">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dictum, arcu at tempor finibus,
+					 magna tellus aliquam massa, ac sagittis justo lorem a sem. Donec feugiat magna a massa mollis egestas. Aenean lacinia tempus nunc at
+					 feugiat.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Aenean lacinia tempus nunc at
+					 feugiat.</p>
+			</section>
+
+			<section class="sidebar">
+					<img src="img/pics/computer-white.png">
+			</section>
+<!--End left Column and Sidebar image-->
+
+			<div class="clearfix-padding"></div> <!--Check disabling this line to see what the effect will be - check CSS too -->
+			<section class="one-third-padding">
+					<h3>Our Skills One</h3>
+					<img src="img/pics/computer-gal.png">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dictum, arcu at tempor finibus,
+						 magna tellus aliquam massa, ac sagittis justo lorem a sem. Donec feugiat magna a massa mollis egestas &amp; research.</p>
+			</section>
+
+			<section class="one-third-padding">
+					<h3>our skills two</h3>
+					<img src="img/pics/900-644.png">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dictum, arcu at tempor finibus,
+						 magna tellus aliquam massa, ac sagittis justo lorem a sem. Donec feugiat magna a massa mollis egestas &amp; research.</p>
+			</section>
+
+			<section class="one-third-padding">
+					<h3>Our SKILLS three</h3>
+					<img src="img/pics/computer-guy.png">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dictum, arcu at tempor finibus,
+						 magna tellus aliquam massa, ac sagittis justo lorem a sem. Donec feugiat magna a massa mollis egestas &amp; research.</p>
+			</section>
+<!--End of one-third-padding -->
+
+	</div> <!--End of the wrapper-->
+
+	<div class="clearfix-padding"></div>
+
+<!-- Start Footer -->
+		<footer>
+				<div id="banner-wrapper">
+							<div class="icon-text">
+										<div class="icon-text-icon">
+													<ul class="footer-nav">
+															<li><a href="index.html" title="Home">Home</a></li>
+															<li><a href="#">Skills</a></li>
+															<li><a href="#">Portfolio</a></li>
+															<li><a href="#">Our Team</a></li>
+															<li><a href="#">Contact</a></li>
+													</ul>
+										</div>
+
+										<div class="icon-text-text">
+												<ul class="social">
+														<li><a href="mailto:chimabu@hotmail.com"><i class="fa fa-envelope-o"></i></a></li>
+														<li> <a href="#"><i class="fa fa-facebook"></i></a></li>
+														<li><a href="#"><i class="fa fa-google"></i></a></li>
+														<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+														<li><a href="#"><i class="fa fa-youtube"></i></a></li>
+												</ul>
+										</div>
+							</div>
+				</div>
+		</footer>
+
+		<footer class="second">
+				<p>&copy Rocket Design</p>
+		</footer>
+<!-- End of the Footer-->
+</body>
+</html>

@@ -1,0 +1,362 @@
+/*import the google font for the webpage*/
+@import 'https://fonts.googleapis.com/css?family=Alegreya+Sans';
+
+/*reset style - applicable under all the doc*/
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  background:#f5f5f5;
+  color: #67727A;
+  font-family: 'ALEGREYA',sans-serif;
+  margin: 0;
+}
+
+h2{
+  font-size: 250%;
+  font-weight:900%; /*gives the boldness other than h1/h2/h3 */
+  text-align: center;
+  padding-top: 2%;
+  color: #f5f5f5;
+}
+
+h3{
+  font-size: 175%;
+  line-height: 155%;
+  padding: 3% 0; /*padding top and bottom */
+  font-weight: 400;/*gives the boldness other than h1/h2/h3 */
+  color: #f5f5f5;
+}
+
+p{
+  font-size: 160%;
+  font-family: 'ALEGREYA',sans-serif;
+  color: #f5f5f5;
+  line-height: 150%;
+  padding:3%;
+  text-indent: 2%;
+  text-align: justify;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+  width: auto;
+  margin-bottom: -4px;/* negative value helps create the space between the text & image to align perfectly*/
+}
+
+
+header{
+  /*background-color: #6991AC;*/
+  width: 100%;
+  height: 100%;
+}
+
+/*use hash to define the css for the tag ID */
+#header-inner{
+max-width: 1200px;
+margin: 0 auto; /*zero margin on the top and the center within the container (tag) */
+}
+
+#logo{
+  margin: 20px;
+  float: left;
+  width: 200px;
+  height: 60px;
+  background: url(img/RD.png) no-repeat center;  /*to add the logo image (should be PNG with tranparent backgroudn to have the same color as bg) */
+}
+
+/*---Start Navigation--- (rework for the backgroud colow along with the header/ header-inner css)*/
+nav{
+  padding: 25px 20px 0 0;
+  float: right;
+}
+
+#menu-icon{
+  display: hidden;
+  width: 40px;
+  height: 40px;
+  background: url(img/nav.png) center; /* 3 line for the menu drop down for the mobile view*/
+}
+
+a:hover#menu-icon{
+  border-radius: 4px 4px 0 0;
+}
+
+ul{
+  list-style: none;
+  /*removes the dot from front of the list*/
+}
+
+nav ul li{
+  font-family: "Alegreya Sans", sans-serif;
+  font-size: 150%;
+  /*display: inline-block;*/
+  float: left;
+  padding: 10px;
+}
+
+
+nav ul li a{
+  color: #FFFFFF;
+  text-decoration: none;
+  /*removes the under-line from the link text*/
+}
+
+nav ul li a:hover{
+  color: #D3D3D3;
+}
+
+.current{
+  color:#D3D3D3;
+}
+
+/* End Navigation CSS*/
+
+.banner{
+  width: 100%;
+  background-color: #6991AC
+}
+
+/*resize the image */
+.banner-inner{
+  max-width: 1100px;
+  margin:0 auto; /*center the image*/
+}
+
+.one-forth{
+  width: 25%;
+  float: left;
+  text-align: center;
+}
+
+#html{
+  background-color:#f1aa90;
+}
+#css{
+  background-color: #BEB9ad;
+}
+#seo{
+  background-color: #AADCD2;
+}
+#social{
+  background-color: #A2B2c1;
+}
+
+.one-forth i{
+  color: #f0f0f0;
+  font-size: 500%;
+  padding: 13% 0 4% 0;
+}
+
+.inner-wrapper{
+  float: left;
+  width: 100%;
+  background-color: #C3d7df;
+}
+
+article{
+  float: left;
+  margin: 0 auto;
+  width: 50%;
+  height: auto;
+}
+
+tablet{
+  background-color: #C3d7df;
+}
+aside{
+  float: right;
+  margin: 0 auto;
+  width: 50%;
+  height: 100%;
+}
+
+#tablet2{
+  background-color: #a2b1c1;
+}
+
+#mobile{
+  background-color: #bab9ad;
+}
+
+#desktop{
+  background-color: #f1aa90;
+}
+
+.inner-wrapper-2{
+  float: left;
+  width: 100%;
+  background-color: #C3d7df;
+}
+
+.inner-wrapper-3{
+  float: left;
+  width: 100%;
+  background-color: #aadcd2;
+}
+
+.one-third{
+  width: 33.3%;
+  text-align: center;
+  float: left;
+}
+
+#google{
+  background-color: #a2b1c1;
+}
+
+#marketing{
+  background-color: #beb9ad;
+}
+
+#customer{
+  background-color: #aadcd2;
+}
+
+#smiley{
+  background-color: #aadcd2;
+  padding:0 0 1%;
+  clear: both;
+}
+
+footer{
+  background-color: #6991ac;
+  width: 100%;
+}
+
+.social{
+  list-style-type: none;
+  text-align: center;
+}
+
+.social li{
+  display: inline;
+}
+
+.social i{
+  font-size: 450%;
+  margin: 1%;
+  padding: 5% 5% 5% 4%;
+  color:#c3d7df;
+}
+
+.social i:hover{
+  color: #f5f5f5;
+}
+
+footer.second{
+  border-top: 1px;
+  background-color: #544b59;
+  max-height: 55px;
+  margin: 0
+}
+
+footer.second p{
+  padding: 5px 0 9px 0;
+  text-align: center;
+}
+
+
+/*---------------- media query----------- */
+
+@media screen and (max-width:768px) {
+  h2{
+    font-size: 150%;
+  }
+
+  h3{
+    font-size: 125%;
+  }
+  P{
+    font-size: 120%;
+  }
+  header{
+    position: absolute;
+  }
+  #logo{
+    margin: 15px 0 20px -25px;
+    background: url(img/RD_mobile.png) no-repeat center;
+  }
+  #menu-icon{
+    display: inline-block;
+  }
+  nav ul , nav:active ul{
+    display:none;
+    z-index: 1000;
+    position: absolute;
+    padding: 20px;
+    background: #6991ac;
+    right: 20px;
+    top: 60px;
+    border: 3px solid #fff;
+    border-radius: 2px 0 2px 2px;
+    width: 50%;
+  }
+  nav:hover ul{
+    display: block;
+  }
+
+  nav li{
+    text-align: center;
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  .banner{
+    padding-top: 86px;
+  }
+
+  .one-forth{
+    float: left;
+    width: 100%;
+  }
+
+  .one-forth i{
+    font-size: 350%;
+    padding: 4% 0 1% 0;
+  }
+
+  article {
+    width: 100%;
+  }
+  aside{
+    width: 100%;
+  }
+
+  .mobile{
+    display: none;
+  }
+  .one-third{
+    width: 100%;
+  }
+
+  .social i{
+    font-size: 180%;
+  }
+
+
+}
+
+
+
+/*
+
+  #menu-icon{
+    display: inline-block;
+  }
+  nav us, nav:active ul{
+    display: none;
+    z-index: 1000;
+    position: absolute;
+    padding: 20px;
+    background: #6991ac;
+    right: 20px;
+  }
+  nav:hover ul{
+    display: block;
+  }
+}
